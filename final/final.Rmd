@@ -1,0 +1,207 @@
+---
+title: "Eğitim Düzeyi İşsizlik Oranı"
+author: 
+  - YAMEN HANY ZAKI ROUBIEN ISMAEL ELNONO [^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+abstract: |
+ 
+ Bu çalışmanın amacı, işsizlik ve eğitim düzeyi arasındaki ilişkinin varlığını ve eğitimin hayatta ne kadar önemli olduğunu belirlemektir. Ayrıca, işsizlik durumunun eğitim düzeyine etkisini inceleyerek, eğitimin iş bulma ve istihdam olanakları üzerindeki rolünü analiz etmeyi hedeflemektedir."Bu araştırma, işsizlik ve eğitim arasındaki ilişkiyi anlamak için istatistiksel veriler ve analizler kullanacaktır,Elde edilecek sonuçlar, eğitimin toplumsal ve ekonomik gelişmedeki önemini vurgulayarak, eğitim politikalarının işsizlik sorununa yönelik etkili çözümler sunabilmesine katkı sağlayacaktır.
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== NOTLAR ================================= -->
+<!-- ======================================================================= -->
+
+[^1]:20080885, [Github Repo](https://github.com/yamen06/final.git)
+
+# Final Hakkında Önemli Bilgiler
+
+\colorbox{BurntOrange}{GITHUB REPO BAĞLANTINIZI BU DOSYANIN 37. SATIRINA YAZINIZ!}
+
+**Proje gönderimi, Github repo linki ile birlikte ekampus sistemine bir zip dosyası yüklenerek yapılacaktır. Sisteme zip dosyası yüklemezseniz ve Github repo linki vermezseniz ara sınav ve final sınavlarına girmemiş sayılırsınız.**
+
+**Proje klasörünüzü sıkıştırdıktan sonra (`OgrenciNumarasi.zip` dosyası) 9 Haziran 2023 23:59'a kadar *ekampus.ankara.edu.tr* adresine yüklemeniz gerekmektedir.**
+
+\colorbox{WildStrawberry}{Daha fazla bilgi için proje klasöründeki README.md dosyasını okuyunuz.}
+
+# Giriş
+işsizlik ekonomilerin temel sorunları arasında yer almaktadır. Bu sorunlara karşı gerekli politikaların formüle edilebilmesi için aralarındaki ilişkinin anlaşılması gerekmektedir. Bu çalışmada Türkiye'de eğitim ve işsizlik arasındaki ilişkinin belirlenmesi amaçlanmıştır(Deniz Dilara DERELİ).  
+
+
+## Çalışmanın Amacı
+İşsizliğin Nedenleri
+İşsizliğin en önemli nedenlerinden biri ekonomik durgunluktur. Ekonomik durgunluk dönemlerinde işletmelerin karlılığı düşer ve işletmeler işçi sayılarını azaltır. Ayrıca, yeni işletmelerin kurulması da ekonomik durgunluk dönemlerinde azalmaktadır.
+Başka bir neden, teknolojik ilerlemelerdir. İleri teknoloji, birçok işi otomatik hale getirirken, işçilerin becerileri ve yetenekleri değişir. Bazı işlerin ortadan kalkması işsizliğe neden olabilir.
+Ayrıca, globalleşme ve uluslararası ticaret de işsizliği artırabilir. Birçok şirket, üretim maliyetlerini düşürmek için üretim tesislerini yurtdışına taşımakta ve işçileri daha ucuz ülkelerde istihdam etmektedir. Bu da işsizliği artırabilir.
+Eğitim
+Eğitim, bir ülkenin ekonomik büyümesi, inovasyonu ve insan gelişimi için kritik bir faktördür. Ancak, eğitimin verimliliği, öğrencilerin başarılarının ölçülmesi ve eğitim programlarının etkililiğinin değerlendirilmesi açısından önemlidir. Bu rapor, eğitimin verimliliği hakkında bilgi sağlamak için bazı anahtar göstergeleri ele almaktadır.
+
+Öğrenci Başarısı
+Öğrenci başarısı, eğitimin verimliliğinin en önemli göstergelerinden biridir. Öğrencilerin başarısını ölçmek için, sınav sonuçları, okul notları ve diğer performans göstergeleri kullanılabilir. Eğitim sistemi, öğrencilerin öğrenme hedeflerine ulaşmalarını sağlamak için etkili olmalıdır. Bu nedenle, öğrenci başarısının ölçülmesi ve analizi, eğitim sistemi tarafından sürekli olarak takip edilmelidir.
+
+Öğretmen Niteliği
+Öğretmenler, eğitim sisteminin en önemli bileşenlerinden biridir. Nitelikli öğretmenler, öğrencilerin başarısını artırmak ve eğitim sisteminin verimliliğini artırmak için önemlidir. Öğretmenlerin niteliği, öğretmen eğitimi programları, profesyonel gelişim fırsatları ve diğer faktörler tarafından etkilenir. 
+
+İstihdam Olanakları
+Eğitimin verimliliği, öğrencilerin işgücüne hazırlanması ve istihdam olanaklarına erişimi açısından da değerlendirilebilir. Eğitim sistemi, öğrencilerin işgücü piyasasındaki gereksinimlere uygun şekilde hazırlanmasını sağlamalıdır. Bu nedenle, eğitim programları ve müfredatı, işgücü piyasasındaki gereksinimleri yans
+
+Eğitim Düzeyi ve İşsizlik Oranı
+Eğitim düzeyi, işsizlik oranı üzerinde önemli bir etkiye sahiptir. İşsizlik oranları genellikle eğitim düzeyi yükseldikçe azalmaktadır. Eğitimli bireyler, daha fazla iş olanaklarına sahip olma eğilimindedir ve işsiz kalmak yerine daha kolay bir şekilde iş bulabilirler.
+
+Yaş ve İşsizlik Oranı
+
+Yaş, işsizlik oranı üzerinde önemli bir etkiye sahip olabilir. Genellikle, gençlerin işsizlik oranı, yaşlı insanların işsizlik oranından daha yüksektir. Bu, gençlerin iş tecrübesinin olmamasından kaynaklanabilir. Ayrıca, yaşlı insanlar işlerini kaybettiklerinde, yeniden istihdam edilmeleri daha zor olabilir. kula Gitme Yaşları ve İşsizlik Oranı 
+
+
+
+Okula gitme yaşı da işsizlik oranı üzerinde bir etkiye sahiptir. Genellikle, daha fazla eğitimli bireylerin işsiz kalma olasılığı daha düşüktür. Okula gitme yaşının yüksek olması, daha yüksek eğitim düzeyleri elde etmek için daha fazla fırsat sağlar ve bu da işsizlik oranlarını düşürür.
+
+İşsizliğin Çözümleri
+
+İşsizlik sorunu, farklı politika ve programlarla çözülebilir. Bunlardan bazıları şunlardır:
+
+Eğitim programları: İşgücü piyasasındaki taleplere göre eğitim programları düzenlenebilir. Bu programlar, işsiz kişilerin yeni beceriler kazanmalarına yardımcı olabilir.
+
+Teşvikler: Hükümetler, işletmeleri istihdamı artırmak için teşvik edebilir. Örneğin, işletmelerin vergi indirimi ve diğer te 
+
+
+## Literatür 
+
+eğitim düzeyi, yaş, cinsiyet ve okula gitme yaşı gibi faktörler, işsizlik oranı üzerinde önemli bir etkiye sahiptir. İşsizlik oranlarının azaltılması için politika yapıcılar, işgücü piyasasının ihtiyaçlarına uygun eğitim programları, teşvikler ve ayrımcılıkla mücadele gibi politikaları uygulamalıdır.
+
+
+# Veri 
+
+\newpage
+```{r results='asis', echo=FALSE}
+library(readxl)
+library(dplyr)
+library(kableExtra)
+
+yas <- read_excel("C:/Users/YAMEN/Desktop/Final/Final/data/yas.xlsx")
+
+colnames(yas) <- c("column1", "column2", "column3", "column4", "column5", "column6", "column7")
+
+formatted_table <- yas %>%
+  kable() %>%
+  kable_styling(full_width = FALSE)
+
+cat(formatted_table)
+```
+
+
+```{r, echo=FALSE}
+library(xtable) 
+# devtools::install_github("emraher/summarytools")
+library(summarytools)
+st_options(lang = "tr")
+```
+
+
+```{r results='asis', echo=FALSE}
+issiz <- read_excel("C:/Users/YAMEN/Desktop/Final/Final/data/issiz.xlsx")
+
+colnames(issiz) <- c("column1", "column2", "column3", "column4", "column5", "column6")
+
+issiz <- issiz %>% 
+  mutate(across(column2:column6, as.numeric))
+
+formatted_table <- issiz %>%
+  kable() %>%
+  kable_styling(full_width = FALSE)
+
+print(formatted_table)
+
+
+```
+
+\newpage
+
+#Yöntem ve Veri Analizi
+ ele aldığımız yaş ve eğitimle ilgili tabloları birbirleriyle karşılaştırarak korelasyon analizi yaptım.
+
+```{r fig.cap="sekil" ,echo=FALSE}
+library(ggplot2)
+library(readxl)
+
+yas <- read_excel("C:/Users/YAMEN/Desktop/Final/Final/data/yas.xlsx")
+colnames(yas) <- c("column1", "column2", "column3", "column4", "column5", "column6")
+library(ggplot2)
+
+grafik <- ggplot(yas, aes(x = column1, y = column2)) +
+  geom_line() +
+  labs(x = "Column 1", y = "Column 2") +
+  ggtitle("Column 1 vs Column 2")
+
+print(grafik)
+
+```
+
+
+```{r fig.cap="sekil" ,echo=FALSE}
+
+
+library(ggplot2)
+issiz <- read_excel("C:/Users/YAMEN/Desktop/Final/Final/data/issiz.xlsx")
+
+colnames(issiz) <- c("column1", "column2", "column3", "column4", "column5", "column6")
+
+grafik <- ggplot(issiz, aes(x = column1, y = column2, group = 1)) +
+  geom_line() +
+  labs(x = "Column 1", y = "Column 2") +
+  ggtitle("Column 1 vs Column 2")
+
+print(grafik)
+
+
+```
+
+
+$$
+Y_t = \beta_0 + \beta_N N_t + \beta_P P_t + \beta_I I_t + \varepsilon_t
+$$
+
+Bu bölümde analize ilişkin farklı tablolar ve grafiklere yer verilmelidir. Çalışmanıza uygun biçimde histogram, nokta grafiği (Şekil \@ref(fig:plot) gibi), kutu grafiği, vb. grafikleri bu bölüme ekleyiniz. Şekillerinize de gerekli göndermeleri bir önceki cümlede gösterildiği gibi yapınız.
+
+
+
+
+
+# Sonuç
+Tabloda gösterilen oranlar, işsizlikle eğitim arasındaki güçlü bir bağlantı olduğunu göstermektedir. Özellikle lise mezunu ve altı eğitim seviyesine sahip olanlar ile 15-19 yaş aralığındaki bireyler arasında işsizlik oranı yüksektir. Bu durum, eğitimin öneminin ve işsizlikle olan ilişkisinin vurgulanmasını sağlamaktadır.
+
+**Kaynakça bölümü Rmarkdown tarafından otomatik olarak oluşturulmaktadır. Taslak dosyada Kaynakça kısmında herhangi bir değişikliğe gerek yoktur.** 
+
+**_Taslakta bu cümleden sonra yer alan hiçbir şey silinmemelidir._**
+
+\newpage
+# Kaynakça {#references}
+<div id="refs"></div>
+1-https://dergipark.org.tr/en/download/article-file/813462
+2-https://eric.ed.gov/?id=EJ1246414
+3-https://dergipark.org.tr/en/pub/zgefd/issue/47957/606767
+4-SYajuFaXIYcqNOxOlvaZRFHjaqh~ZtAre~NrVwYx8cSJUJMQyAdBpRM1R18-irsA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
