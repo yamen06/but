@@ -25,8 +25,7 @@ urlcolor: blue
 fontsize: 12pt
 biblio-style: apalike
 abstract: |
- 
- Bu çalışmanın amacı, işsizlik ve eğitim düzeyi arasındaki ilişkinin varlığını ve eğitimin hayatta ne kadar önemli olduğunu belirlemektir. Ayrıca, işsizlik durumunun eğitim düzeyine etkisini inceleyerek, eğitimin iş bulma ve istihdam olanakları üzerindeki rolünü analiz etmeyi hedeflemektedir."Bu araştırma, işsizlik ve eğitim arasındaki ilişkiyi anlamak için istatistiksel veriler ve analizler kullanacaktır,Elde edilecek sonuçlar, eğitimin toplumsal ve ekonomik gelişmedeki önemini vurgulayarak, eğitim politikalarının işsizlik sorununa yönelik etkili çözümler sunabilmesine katkı sağlayacaktır.
+ Bu makalede işsizliğin nedenleri ve eğitimin işsizlik üzerindeki etkisi ele alınmıştır. İşsizliğin nedenleri arasında ekonomik durgunluk, teknolojik ilerlemeler ve globalleşme yer almaktadır. Eğitim ise ekonomik büyüme, inovasyon ve insan gelişimi için kritik bir faktördür. Makalenin anahtar noktaları şunlardır:Ekonomik durgunluk, işletmelerin karlılığını düşürerek işçi sayılarının azalmasına yol açar. Ayrıca, yeni işletmelerin kurulması da ekonomik durgunluk dönemlerinde azalır. Teknolojik ilerlemeler, otomasyonun artması ve işlerin değişmesi sonucunu doğurur. Bazı işler ortadan kalkabilir ve işsizlik oranı artabilir. Globalleşme ve uluslararası ticaret, üretim maliyetlerini düşürmek için işletmelerin üretim tesislerini yurtdışına taşımasına yol açar. Bu da işsizlik oranını artırabilir.Eğitim sistemi, öğrenci başarısı ve öğretmen niteliği gibi faktörlerle değerlendirilebilir. Öğrenci başarısı, sınav sonuçları, okul notları ve diğer performans göstergeleriyle ölçülebilir. Nitelikli öğretmenler ise öğrencilerin başarısını artırır ve eğitim sisteminin verimliliğini yükseltir.- Eğitim düzeyi, işsizlik oranı üzerinde etkili bir faktördür. Eğitimli bireyler, daha fazla iş olanaklarına sahip olma eğilimindedir ve işsiz kalmak yerine daha kolay iş bulabilirler. İşsizliği çözmek için eğitim programları düzenlenebilir. İşgücü piyasasındaki taleplere uygun olarak yeni beceriler kazandırmak amacıyla eğitim programları oluşturulabilir. Ayrıca, hükümetler işletmeleri istihdamı artırmak için teşvik edebilir, vergi indirimleri gibi teşvikler sağlayabilir.Makalenin özeti olarak işsizliğin nedenleri ve eğitimin önemi ele alınmıştır. İşsizliği azaltmak için ekonomik faktörlerin yönetimi, teknolojik değişimlere uyum sağlama, eğitim sisteminin etkinliği ve istihdam politikalarının uygulanması önemlidir.
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
@@ -36,17 +35,8 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ============================== NOTLAR ================================= -->
 <!-- ======================================================================= -->
 
-[^1]:20080885, [Github Repo](https://github.com/yamen06/final.git)
+[^1]:20080885, [Github Repo]("https://github.com/yamen06/but.git)
 
-# Final Hakkında Önemli Bilgiler
-
-\colorbox{BurntOrange}{GITHUB REPO BAĞLANTINIZI BU DOSYANIN 37. SATIRINA YAZINIZ!}
-
-**Proje gönderimi, Github repo linki ile birlikte ekampus sistemine bir zip dosyası yüklenerek yapılacaktır. Sisteme zip dosyası yüklemezseniz ve Github repo linki vermezseniz ara sınav ve final sınavlarına girmemiş sayılırsınız.**
-
-**Proje klasörünüzü sıkıştırdıktan sonra (`OgrenciNumarasi.zip` dosyası) 9 Haziran 2023 23:59'a kadar *ekampus.ankara.edu.tr* adresine yüklemeniz gerekmektedir.**
-
-\colorbox{WildStrawberry}{Daha fazla bilgi için proje klasöründeki README.md dosyasını okuyunuz.}
 
 # Giriş
 işsizlik ekonomilerin temel sorunları arasında yer almaktadır. Bu sorunlara karşı gerekli politikaların formüle edilebilmesi için aralarındaki ilişkinin anlaşılması gerekmektedir. Bu çalışmada Türkiye'de eğitim ve işsizlik arasındaki ilişkinin belirlenmesi amaçlanmıştır(Deniz Dilara DERELİ).  
@@ -92,9 +82,23 @@ Teşvikler: Hükümetler, işletmeleri istihdamı artırmak için teşvik edebil
 ## Literatür 
 
 eğitim düzeyi, yaş, cinsiyet ve okula gitme yaşı gibi faktörler, işsizlik oranı üzerinde önemli bir etkiye sahiptir. İşsizlik oranlarının azaltılması için politika yapıcılar, işgücü piyasasının ihtiyaçlarına uygun eğitim programları, teşvikler ve ayrımcılıkla mücadele gibi politikaları uygulamalıdır.
+Araştırmalar işsizlik ve eğitim arasındaki ilişkiyi incelemiştir. İşsizlik, ekonomik durgunluk, teknolojik ilerlemeler ve globalleşme gibi faktörlerden etkilenebilir. Eğitim ise bir ülkenin ekonomik büyümesi, inovasyonu ve insan gelişimi için kritik bir faktördür. İşsizlik oranı genellikle eğitim düzeyi yükseldikçe azalmaktadır. Eğitimli bireyler, daha fazla iş olanaklarına sahip olma eğilimindedir ve iş bulma konusunda avantajlıdırlar.
 
+Çalışmada, Türkiye'de eğitim ve işsizlik arasındaki ilişkinin belirlenmesi amaçlanmıştır. İşsizliğin nedenleri arasında ekonomik durgunluk, teknolojik ilerlemeler ve globalleşme gibi faktörler yer alırken, eğitimin işsizlik oranı üzerinde olumlu bir etkisi olduğu vurgulanmıştır. Eğitim, işgücüne hazırlık ve istihdam olanakları açısından da önemlidir. Eğitim programları işgücü piyasasındaki taleplere göre düzenlenebilir ve işsiz kişilere yeni beceriler kazandırabilir. Ayrıca, teşvikler de işsizliği azaltmak için kullanılan bir politika aracıdır.
+
+Öğrenci başarısı, öğretmen niteliği ve istihdam olanakları da eğitimin verimliliği açısından önemli faktörlerdir. Öğrenci başarısı ölçülerek eğitim sistemi etkinliği değerlendirilebilir. Nitelikli öğretmenler ise öğrencilerin başarısını artırır ve eğitim sisteminin verimliliğini yükseltir. Ayrıca, eğitimin istihdam olanaklarına erişim açısından değerlendirilmesi önemlidir. Eğitim sistemi, işgücü piyasasındaki gereksinimlere uygun şekilde öğrencileri hazırlamalıdır.
+
+İşsizlik sorunu çeşitli politika ve programlarla çözülebilir. Eğitim programlarının işgücü piyasasındaki taleplere göre düzenlenmesi, işsiz kişilere yeni beceriler kazandırmaya yardımcı olabilir. Hükümetler, işletmeleri istihdamı artırmak için teşvik edebilir. Örneğin, işletmelere vergi indirimi gibi teşvikler sunulabilir.
+
+Bu çalışma, işsizlik ve eğitim arasındaki ilişkiyi anlamak ve işsizliğin çözümü için politika önerileri sunmak amac
 
 # Veri 
+Bu tablo, yaşlara göre işsizlik oranlarını göstermektedir. Verilere göre, 15-19 yaş aralığındaki gençlerin işsizlik oranı oldukça yüksekken, 45-50 yaş aralığındaki yetişkinlerin işsizlik oranı daha düşüktür. Bu verilere göre, gençler arasında işsizlik sorunu daha büyük bir endişe kaynağı olarak görülmektedir. Bu durum, işsizlik oranlarının yaşa bağlı olarak değişebildiğini göstermektedir. İşsizlik, özellikle genç nesiller için önemli bir sorun olarak karşımıza çıkmaktadır. Bu tablodan elde edilen veriler, işsizlikle mücadelede yaşa özel politikaların geliştirilmesinin önemini vurgulamaktadır. Yaş grupları arasındaki işsizlik farklılıklarının anlaşılması, istihdam politikalarının etkin şekilde uygulanabilmesi için önemlidir.
+
+
+İkinci şekil 
+Tablo, eğitim düzeyleri ve işsizlik oranlarını göstermektedir. Verilere göre, en yüksek işsizlik oranına sahip olan grup okur-yazar olmayanlardır. Bununla birlikte, yüksek lisans derecesine sahip bireylerde de işsizlik oranı mevcuttur, ancak bu oran oldukça düşüktür. İşsizlik oranlarına bakıldığında, okur-yazarlık seviyesinin işsizlik üzerinde önemli bir etkisi olduğu görülmektedir. Bu tablo, eğitim düzeyi ile işsizlik arasındaki ilişkiyi göstermektedir. İşsizlik, eğitim düzeyi yükseldikçe azalmaktadır, ancak yüksek lisans gibi daha yüksek eğitim seviyelerinde dahi hala işsizlik sorunu bulunmaktadır. Bu veriler, eğitim seviyeleri arasındaki işsizlik oranlarının farklılığını vurgulamaktadır. İşsizlikle mücadelede, eğitim sistemine ve nitelikli iş imkanlarına odaklanan politikaların önemi ortaya çıkmaktadır. İşsizlik oranlarının azaltılması için eğitim imkanlarının genişletilmesi ve iş piyasasındaki taleplere uygun becerilerin kazandırılması gerekmektedir.
+
 
 \newpage
 ```{r results='asis', echo=FALSE}
@@ -161,6 +165,7 @@ print(grafik)
 
 ```
 
+ele aldığımız  eğitim düzüye ve işsiz oranı  ilgili tabloları birbirleriyle karşılaştırarak korelasyon analizi yaptım.
 
 ```{r fig.cap="sekil" ,echo=FALSE}
 
@@ -181,22 +186,17 @@ print(grafik)
 ```
 
 
-$$
-Y_t = \beta_0 + \beta_N N_t + \beta_P P_t + \beta_I I_t + \varepsilon_t
-$$
-
-Bu bölümde analize ilişkin farklı tablolar ve grafiklere yer verilmelidir. Çalışmanıza uygun biçimde histogram, nokta grafiği (Şekil \@ref(fig:plot) gibi), kutu grafiği, vb. grafikleri bu bölüme ekleyiniz. Şekillerinize de gerekli göndermeleri bir önceki cümlede gösterildiği gibi yapınız.
-
-
-
 
 
 # Sonuç
 Tabloda gösterilen oranlar, işsizlikle eğitim arasındaki güçlü bir bağlantı olduğunu göstermektedir. Özellikle lise mezunu ve altı eğitim seviyesine sahip olanlar ile 15-19 yaş aralığındaki bireyler arasında işsizlik oranı yüksektir. Bu durum, eğitimin öneminin ve işsizlikle olan ilişkisinin vurgulanmasını sağlamaktadır.
 
-**Kaynakça bölümü Rmarkdown tarafından otomatik olarak oluşturulmaktadır. Taslak dosyada Kaynakça kısmında herhangi bir değişikliğe gerek yoktur.** 
+Bu tablodan elde edilen verilere göre, eğitim düzeyi ile işsizlik arasında güçlü bir ilişki olduğu görülmektedir. Okur-yazarlık seviyesi düşük olan bireyler arasında işsizlik oranı en yüksek iken, eğitim seviyesi yükseldikçe işsizlik oranlarının azaldığı gözlemlenmektedir. Bununla birlikte, yüksek lisans gibi daha yüksek eğitim seviyelerine sahip bireylerde dahi hala işsizlik sorunu bulunmaktadır, ancak bu oran oldukça düşüktür.
 
-**_Taslakta bu cümleden sonra yer alan hiçbir şey silinmemelidir._**
+Bu veriler, işsizlikle mücadelede eğitimin ve nitelikli iş imkanlarının önemini vurgulamaktadır. İşsizlik oranlarının azaltılması için, eğitim imkanlarının genişletilmesi ve iş piyasasındaki taleplere uygun becerilerin kazandırılması büyük önem taşımaktadır. Özellikle okur-yazarlık oranının artırılması ve mesleki eğitim programlarına daha fazla yatırım yapılması, işsizlik sorununu çözmek için etkili adımlar olabilir.
+
+Sonuç olarak, bu tablo işsizlik oranlarının eğitim düzeyine bağlı olarak değiştiğini göstermektedir. Eğitim seviyesi arttıkça işsizlik oranlarının azaldığı görülmektedir, ancak hala işsizlikle mücadelede daha fazla çalışma gerekmektedir. Politika yapıcıların eğitim sistemine ve iş imkanlarının iyileştirilmesine odaklanması, işsizlik oranlarını düşürmek ve toplumun genel refahını artırmak için önemli bir adımdır.
+
 
 \newpage
 # Kaynakça {#references}
